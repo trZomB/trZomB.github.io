@@ -30,7 +30,7 @@ h2.miniQuoteText {
     font-size: 1.25em;
     font-style: italic;
     text-align: center;
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px 1px black;
 }
 
 /* coloured banner block */
@@ -47,6 +47,23 @@ h2.miniQuoteText {
     text-align: center;
     background: rgb(82, 101, 141);
     color: white;
+}
+
+/* body box for aligning content to the left */
+.bodyBoxLeft {
+    font-size: 1.20em;
+    padding-top: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+/* body box for aligning content to the right */
+.bodyBoxRight {
+    font-size: 1.20em;
+    padding-top: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: right;
 }
 
 /* background colour */
