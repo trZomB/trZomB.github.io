@@ -23,14 +23,22 @@ h2.quoteText {
     text-shadow: 1px 1px 2.5px black;
 }
 
-/* smaller but still custom h2 */
-h2.miniQuoteText {
+/* smaller but still custom h2 for header */
+h2.miniQuoteTextHeader {
     color: white;
     font-family: serif;
     font-size: 1.25em;
     font-style: italic;
     text-align: center;
     text-shadow: 1px 1px 1px black;
+}
+
+/* quotes in body */
+h2.miniQuoteText {
+    font-family: serif;
+    font-size: 1.25em;
+    font-style: italic;
+    text-align: center;
 }
 
 /* coloured banner block */
