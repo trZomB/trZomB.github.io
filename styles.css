@@ -1,16 +1,19 @@
+/* everything */
 * {
+    font-family: sans-serif;
     margin: 0;
 }
 
+/* custom h1 for coloured banner block */
 h1.headerText {
     color: white;
-    font-family: sans-serif;
     font-size: 5em;
     text-align: center;
     text-shadow: 2px 2px 5px black;
     text-transform: uppercase;
 }
 
+/* custom h2 for coloured banner block */
 h2.quoteText {
     color: white;
     font-family: serif;
@@ -20,13 +23,33 @@ h2.quoteText {
     text-shadow: 1px 1px 2.5px black;
 }
 
-.headerBox {
-    padding: 60px;
+/* smaller but still custom h2 */
+h2.miniQuoteText {
+    color: white;
+    font-family: serif;
+    font-size: 1.25em;
+    font-style: italic;
     text-align: center;
-    background: peachpuff;
+    text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+/* coloured banner block */
+.headerBox {
+    padding: 40px;
+    text-align: center;
+    background: rgb(115, 141, 197);
     color: white;
 }
 
+/* skinny coloured block under the banner */
+.subHeaderBox {
+    padding: 10px;
+    text-align: center;
+    background: rgb(82, 101, 141);
+    color: white;
+}
+
+/* background colour */
 body {
-    background-color: lightslategray;
+    background-color: lightgrey;
 }
