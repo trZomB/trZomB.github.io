@@ -30,7 +30,7 @@ h2.miniQuoteText {
     font-size: 1.25em;
     font-style: italic;
     text-align: center;
-    text-shadow: 0.5px 0.5px 0.5px black;
+    text-shadow: 1px 1px black;
 }
 
 /* coloured banner block */
