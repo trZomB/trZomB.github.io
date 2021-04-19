@@ -1,80 +1,73 @@
 /* everything */
 * {
     font-family: sans-serif;
-    margin: 0;
+    margin: 0 auto;
 }
 
-/* custom h1 for coloured banner block */
-h1.headerText {
+a:link {
     color: white;
-    font-size: 5em;
-    text-align: center;
-    text-shadow: 2px 2px 5px black;
-    text-transform: uppercase;
 }
 
-/* custom h2 for coloured banner block */
-h2.quoteText {
+a:visited {
     color: white;
-    font-family: serif;
-    font-size: 2em;
-    font-style: italic;
-    text-align: center;
-    text-shadow: 1px 1px 2.5px black;
 }
 
-/* smaller but still custom h2 for header */
-h2.miniQuoteTextHeader {
+a:hover {
     color: white;
-    font-family: serif;
-    font-size: 1.25em;
-    font-style: italic;
-    text-align: center;
-    text-shadow: 1px 1px 1px black;
 }
 
-/* quotes in body */
-h2.miniQuoteText {
-    font-family: serif;
-    font-size: 1.25em;
-    font-style: italic;
-    text-align: center;
+a:active {
+    color: white;
 }
 
 /* coloured banner block */
 .headerBox {
-    padding: 40px;
+    padding: 16px;
     text-align: center;
     background: rgb(115, 141, 197);
     color: white;
 }
 
-/* skinny coloured block under the banner */
 .subHeaderBox {
-    padding: 10px;
-    text-align: center;
-    background: rgb(82, 101, 141);
+    /* background-color:rgb(91, 112, 156); */
+    padding: 20px;
+}
+
+.bodyBox {
+    background-color: rgb(115, 141, 197);
     color: white;
-}
-
-/* body box for aligning content to the left */
-.bodyBoxLeft {
-    font-size: 1.20em;
-    padding-top: 30px;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
-/* body box for aligning content to the right */
-.bodyBoxRight {
-    font-size: 1.20em;
-    padding-top: 30px;
-    padding-left: 20%;
-    padding-right: 20%;
-    text-align: right;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
 }
 
 /* background colour */
 body {
-    background-color: lightgrey;
+    background-image: linear-gradient(rgb(91, 112, 156), rgb(115, 141, 197));
+}
+
+h1.headerText {
+    color: white;
+    font-family: 'Bangers', sans-serif;
+    font-size: 6em;
+    letter-spacing: 0.10em;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    text-transform: uppercase;
+}
+
+h2.headerSubText {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    text-transform: uppercase;
+}
+
+p.miniQuote {
+    color: white;
+    font-family: 'Bangers', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 0.08em;
+    text-align: center;
 }
