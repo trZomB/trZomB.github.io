@@ -20,7 +20,7 @@ a:active {
     color: white;
 }
 
-/* coloured banner block */
+/* coloured navigation top menu */
 .headerBox {
     padding: 16px;
     text-align: center;
@@ -28,11 +28,12 @@ a:active {
     color: white;
 }
 
+/* header logo container */
 .subHeaderBox {
-    /* background-color:rgb(91, 112, 156); */
     padding: 20px;
 }
 
+/* coloured box for highlighting content */
 .bodyBox {
     background-color: rgb(115, 141, 197);
     color: white;
@@ -50,7 +51,7 @@ h1.headerText {
     color: white;
     font-family: 'Bangers', sans-serif;
     font-size: 6em;
-    letter-spacing: 0.10em;
+    letter-spacing: 0.07em;
     text-align: center;
     text-shadow: 2px 2px 5px black;
     text-transform: uppercase;
@@ -71,4 +72,57 @@ p.miniQuote {
     letter-spacing: 0.08em;
     text-align: center;
     width: 80%;
+}
+
+
+/* all-CSS accordion menu */
+.accordion {
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: rgb(115, 141, 197);
+}
+
+.accordion__label {
+    padding: 14px 20px;
+}
+
+.accordion__label {
+    color: white;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.1s;
+}
+
+.accordion__label:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.accordion__label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+    background-size: contain;
+    transition: transform 0.4s;
+}
+
+.accordion__content {
+    display: none;
+}
+
+.accordion__input {
+    display: none;
+}
+
+.accordion__input:checked ~ .accordion__content {
+    display: block;
+}
+
+.accordion__input:checked ~ .accordion__label::after {
+    transform: translateY(-50%) rotate(0.5turn);
 }
