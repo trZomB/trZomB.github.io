@@ -47,7 +47,7 @@ a:active {
 /* background colour */
 body {
     /* background-image: linear-gradient(rgb(91, 112, 156), rgb(115, 141, 197)); */
-    background-image:url(images/background.png);
+    background-image:url(/images/background.png);
 }
 
 h1.headerText {
