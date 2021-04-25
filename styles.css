@@ -1,6 +1,6 @@
 /* everything */
 * {
-    font-family: sans-serif;
+    font-family: 'Acme', sans-serif;
     margin: 0 auto;
 }
 
@@ -24,7 +24,7 @@ a:active {
 .headerBox {
     padding: 16px;
     text-align: center;
-    background: rgb(115, 141, 197);
+    background: rgba(115, 141, 197, 0.75);
     color: white;
 }
 
@@ -35,16 +35,19 @@ a:active {
 
 /* coloured box for highlighting content */
 .bodyBox {
-    background-color: rgb(115, 141, 197);
+    background-color: rgba(115, 141, 197, 0.75);
     color: white;
-    padding: 20px 0px;
+    font-size: 1.25em;
+    padding: 20px 20px;
     text-align: center;
+    text-shadow: 1px 1px 1px black;
     width: 80%;
 }
 
 /* background colour */
 body {
-    background-image: linear-gradient(rgb(91, 112, 156), rgb(115, 141, 197));
+    /* background-image: linear-gradient(rgb(91, 112, 156), rgb(115, 141, 197)); */
+    background-image:url(images/background.png);
 }
 
 h1.headerText {
@@ -53,7 +56,7 @@ h1.headerText {
     font-size: 6em;
     letter-spacing: 0.07em;
     text-align: center;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 1px black;
     text-transform: uppercase;
 }
 
@@ -61,16 +64,22 @@ h2.headerSubText {
     color: white;
     font-size: 2em;
     text-align: center;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 1px black;
     text-transform: uppercase;
+}
+
+h2.navi {
+    text-shadow: 2px 2px 1px black;
 }
 
 /* left-aligned header */
 h2.title {
     color: white;
+    font-size: 2em;
     margin: 20px 0px;
-    text-align: left;
     padding-left: 10%;
+    text-align: left;
+    text-shadow: 2px 2px 1px black;
 }
 
 p.miniQuote {
@@ -79,6 +88,7 @@ p.miniQuote {
     font-size: 1.5em;
     letter-spacing: 0.08em;
     text-align: center;
+    text-shadow: 1px 1px 1px black;
     width: 80%;
 }
 
@@ -87,18 +97,18 @@ p.miniQuote {
 .accordion {
     width: 80%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background: rgb(115, 141, 197);
+    background: rgba(115, 141, 197, 0.75);
 }
 
-.accordion__label {
-    padding: 50px 3%;
-}
 
 .accordion__label {
     color: white;
-    display: block;
     cursor: pointer;
+    font-size: 1.5em;
+    display: block;
+    padding: 50px;
     position: relative;
+    text-shadow: 2px 2px 1px black;
     transition: background 0.1s;
 }
 
