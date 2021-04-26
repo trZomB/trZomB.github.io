@@ -1,48 +1,70 @@
 * {
     color: white;
     font-family: 'Acme', sans-serif;
-    font-size: 1.25em;
     margin: 0 auto;
-    /* 5px horizontal 10px vertical */
-    text-align: center;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
 body {
-    background-image:url(images/background.png);
+    background: #31a0de;
+    background-image: url(images/background.png);
 }
 
-h1#logoText {
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* Logo */
+
+h1 {
     font-family: 'Bangers', sans-serif;
-    font-size: 6em;
+    font-size: 8em;
     letter-spacing: 12px;
     padding: 0px 50px;
-    text-shadow: 6px 5px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 6px 3px rgba(0, 0, 0, 0.5);
 }
 
-h2.leftTitle {
-    padding-left: 10%;
+/* Subtitle */
+
+h2 {
+    font-size: 2.5em;
+    padding: 0px 5px;
+    text-shadow: 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+h2.left {
     text-align: left;
 }
 
-h2#logoSubText {
-    font-size: 1.75em;
-    padding: 0px 20px 50px;
-    text-shadow: 4px 2px 2px rgba(0, 0, 0, 0.5);
+/* Navigation */
+
+h3 {
+    font-size: 1.5em;
+    text-shadow: 3px 2px rgba(0, 0, 0, 0.5);
 }
 
-h3#navText {
-    font-size: 1em;
-    padding: 5px 5px;
+h2.left, h4, p {
+    padding: 0px 10%;
 }
 
-/* all-CSS accordion menu */
+h4 {
+    font-size: 1.5em;
+    text-shadow: 2px 2px rgba(0, 0, 0, 1);
+}
+
+h4.right, p.right {
+    text-align: right;
+}
+
+p {
+    font-size: 1.25em;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.75);
+}
+
 .accordion {
     background: rgba(0, 0, 0, 0.4);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
     width: 80%;
 }
-
 
 .accordion__label {
     cursor: pointer;
@@ -56,7 +78,6 @@ h3#navText {
     background: rgba(255, 255, 255, 0.1);
 }
 
-/* positioning the rotating arrow */
 .accordion__label::after {
     content: "";
     position: absolute;
@@ -78,10 +99,10 @@ h3#navText {
     display: none;
 }
 
-.accordion__input:checked ~ .accordion__content {
+.accordion__input:checked~.accordion__content {
     display: block;
 }
 
-.accordion__input:checked ~ .accordion__label::after {
+.accordion__input:checked~.accordion__label::after {
     transform: translateY(-50%) rotate(0.5turn);
 }
