@@ -1,65 +1,69 @@
+/* Factory settings */
 * {
     color: white;
     font-family: 'Acme', sans-serif;
     margin: 0 auto;
 }
 
+/* Background image & colour in case URL is dead */
 body {
     background: #31a0de;
     background-image: url(images/background.png);
 }
 
+/* Logo, Subtitle and Navigation headers centered */
 h1, h2, h3 {
     text-align: center;
 }
 
 /* Logo */
-
 h1 {
     font-family: 'Bangers', sans-serif;
     font-size: 8em;
     letter-spacing: 12px;
-    padding: 0px 50px;
     text-shadow: 6px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* Subtitle */
-
 h2 {
     font-size: 2.5em;
-    padding: 0px 5px;
     text-shadow: 4px 2px rgba(0, 0, 0, 0.5);
 }
 
-h2.left {
-    text-align: left;
-}
-
 /* Navigation */
-
 h3 {
     font-size: 1.5em;
     text-shadow: 3px 2px rgba(0, 0, 0, 0.5);
 }
 
-h2.left, h4, p {
-    padding: 0px 10%;
-}
-
+/* Accordion Header, left aligned by default */
 h4 {
     font-size: 1.5em;
     text-shadow: 2px 2px rgba(0, 0, 0, 1);
 }
 
-h4.right, p.right {
-    text-align: right;
-}
-
+/* Larger font for all paragraphs & shadow */
 p {
     font-size: 1.25em;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.75);
 }
 
+/* All body content becomes 80% page width */
+.leftDiv, .rightDiv, .middleQuote, .accordionHeader {
+    width: 80%;
+}
+
+/* Left aligned content div and header 2 variant */
+.leftDiv, h2.left {
+    text-align: left;
+}
+
+/* Right aligned content div */
+.rightDiv {
+    text-align: right;
+}
+
+/* Drop-down accordion, no JavaScript */
 .accordion {
     background: rgba(0, 0, 0, 0.4);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
