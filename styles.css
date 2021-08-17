@@ -8,7 +8,7 @@
 /* Background image & colour in case URL is dead */
 body {
     background: #31a0de;
-    background-image: url(images/background.png);
+    background-image: url(images/mic_pattern.png);
 }
 
 /* Logo, Subtitle and Navigation headers centered */
