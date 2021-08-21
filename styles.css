@@ -63,6 +63,11 @@ p {
     text-align: right;
 }
 
+.socials {
+        /*background-color: black;*/
+        text-align: center;
+}
+
 /* Drop-down accordion, no JavaScript */
 .accordion {
     background: rgba(0, 0, 0, 0.4);
