@@ -32,19 +32,19 @@ h2 {
 
 /* Navigation */
 h3 {
-    font-size: 1.5em;
+    font-size: 1.75em;
     text-shadow: 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* Accordion Header, left aligned by default */
 h4 {
-    font-size: 1.5em;
+    font-size: 1.75em;
     text-shadow: 2px 2px rgba(0, 0, 0, 1);
 }
 
 /* Larger font for all paragraphs & shadow */
 p {
-    font-size: 1.25em;
+    font-size: 1.5em;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.75);
 }
 
